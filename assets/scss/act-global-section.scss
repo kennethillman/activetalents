@@ -1,0 +1,348 @@
+// SECTIONS / SLICES
+
+[class ^= "s-"] {
+  padding: $m4 0 0;
+  position: relative;
+
+
+  // ADJUST CONTENT IF SCREEN IS BIGGER THE SECTION CONTENT
+  &.-s-content-adjust {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .section-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding-top: $m1;
+    }
+
+    .section-body {
+      padding-bottom: $m1;
+    }
+
+    .section-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+  }
+
+  .footer {
+    margin-top: $m4;
+    padding: $m4 0;
+    box-sizing: border-box;
+
+    &.-text {
+      text-align: left;
+
+    }
+
+  }
+
+  .footer-text {
+    text-align: left;
+    margin-bottom: $m5;
+    span {
+      display: block;
+      margin-top: .56em;
+    }
+  }
+
+  .footer-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width:140px;
+    transform: translateX(-10px);
+    margin: 0;
+  }
+
+
+  &.s-clients {
+    .linkedin {
+      margin-top: 0;
+      margin-right: 65px;
+      margin-bottom: $m5;
+      svg {
+        fill: $blue;
+      }
+    }
+  }
+
+  &.s-consultants {
+    .linkedin {
+      margin-top: 0;
+      margin-right: 65px;
+      svg {
+        fill: $purple;
+      }
+    }
+  }
+
+  .linkedin {
+
+    display: block;
+    position: relative;
+    margin-top: $m5;
+    padding-left: 65px;
+    text-decoration: none;
+
+    .header-secondary {
+      padding-bottom: .24em;
+      position: relative;
+      overflow: hidden;
+
+      &:before {
+        display: none;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: $white;
+        bottom: 2px;
+        left: 0;
+        z-index: 1;
+        transform: translateX(-100%);
+        transition: all ease-in-out .3s;
+      }
+
+    }
+
+    span {
+
+      display: block;
+      padding-bottom: 5px;
+      margin-bottom: -5px;
+      display: inline-block;
+
+
+    }
+
+    figure {
+      position: absolute;
+      left: 0;
+      margin: 0 12px 0 0;
+      top: 0;
+      height: 50px;
+      width: 50px;
+      border-radius: 100%;
+      background: rgba(255,255,255,1);
+      border: 4px solid #ffffff;
+      transition: background  .3s;
+
+      svg {
+        margin: 11px;
+        width: 20px;
+        height: 20px;
+        fill: $pink;
+      }
+    }
+
+    &:hover {
+      figure {
+        background: rgba(255,255,255,0);
+        svg {
+          fill: $white;
+        }
+      }
+
+      .header-secondary {
+        &:before {
+          transform: translateX(0);
+        }
+      }
+
+    }
+
+  }
+
+
+  // 480px
+  @media screen and (min-width: 480px)  {
+    .footer-photo {
+      width:180px;
+    }
+  }
+
+  // 600px
+  @media screen and (min-width: 600px)  {
+    padding: $m3 0 0;
+
+    .footer {
+      margin-top: $m3;
+    }
+
+  }
+
+  // 768px
+  @media screen and (min-width: 768px)  {
+    padding: $m2 0 0;
+    .footer {
+      margin-top: $m2;
+      padding: $m4 0;
+    }
+    .footer-photo {
+      left: 50%;
+      right: auto;
+      width:180px;
+      transform: translateX(-50%);
+    }
+    .footer-text {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .linkedin {
+      margin-top: 0;
+      float: right;
+    }
+
+    .linkedin {
+      .header-secondary {
+        &:before {
+          display: block;
+        }
+      }
+    }
+
+    &.s-clients {
+      .linkedin {
+        text-align: right;
+        float: right;
+        margin-bottom: 0;
+        margin-left: 0;
+
+        figure {
+          left: 100%;
+          right: 0;
+          margin: 0 0 0 11px;
+        }
+      }
+      .-ghost {
+        float: right;
+      }
+
+    }
+
+  }
+
+  @include VP768ONLY {
+    &.s-applications {
+      .-g-vp768-100 [class^="g-"] {
+        width: 86% ;
+      }
+
+    }
+  } // VP768ONLY END
+
+
+  // 1280px
+  @media screen and (min-width: 1280px)  {
+    padding: $m1 0 0;
+    .footer {
+      margin-top: $m1;
+      padding: $m3 0;
+    }
+    .footer-photo {
+      width:220px;
+    }
+  }
+
+
+  // 1024px
+  @media screen and (min-width: 1024px)  {
+
+  }
+
+
+  // 1280px
+  @media screen and (min-width: 1280px)  {
+
+  }
+
+  // 1440px
+  @media screen and (min-width: 1440px)  {
+
+  }
+
+  // 1680px
+  @media screen and (min-width: 1680px)  {
+    padding: $mxl 0 0;
+    &.-s-content-adjust {
+      .section-top {
+        padding-top: $mxl;
+      }
+      .section-body {
+        padding-bottom: $mxl;
+      }
+    }
+  }
+
+  // 1920px
+  @media screen and (min-width: 1920px)  {
+    padding: $mxxl 0 0;
+    &.-s-content-adjust {
+      .section-top {
+        padding-top: $mxxl;
+      }
+      .section-body {
+        padding-bottom: $mxxl;
+      }
+    }
+  }
+
+  // 2600px
+  @media screen and (min-width: 2600px)  {
+    padding: $mxxxl 0 0;
+
+    .footer {
+      margin-top: $m1;
+      padding: $m1 0;
+    }
+
+    .footer-photo {
+      width: 380px;
+    }
+
+    .linkedin {
+      margin-top: $m5;
+      padding-left: 125px;
+
+      span {
+        margin-top: .56em;
+        font-size: 32px;
+      }
+
+      figure {
+
+        margin: 0 34px 0 0;
+        height: 100px;
+        width: 100px;
+        svg {
+          margin: 25px 0 0 25px;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    &.-s-content-adjust {
+      .section-top {
+        padding-top: $mxxxl;
+      }
+      .section-body {
+        padding-bottom: $mxxxl;
+      }
+    }
+
+  }
+
+
+}

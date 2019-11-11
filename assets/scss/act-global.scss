@@ -1,0 +1,152 @@
+
+
+// GLOBAL
+
+svg {
+  fill: $white;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.act-page-container {
+  background-color: $pink;
+}
+
+[class^='p-']{
+   min-height: 100vh;
+}
+
+///////////////////////////////////////////
+// PAGE TRANSITIONS
+///////////////////////////////////////////
+
+.custom-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+// TRANSITION ENTER
+.custom-enter {
+  opacity: 0;
+  .section-top,
+  .section-body,
+  .section-bottom {
+    opacity: 0;
+  }
+  .section-top{
+    transform: translateY(50px);
+  }
+
+  .section-body .ani-two,
+  .section-body .ani-three,
+  .section-body .ani-four,
+  .section-body .ani-five {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+
+}
+
+.custom-enter-active {
+  transition: opacity 1.6s ease-out;
+  .section-top {
+    transition: all .8s ease-out;
+  }
+  .section-body .ani-two {
+    transition: all .8s ease-out .2s;
+  }
+  .section-body .ani-three {
+    transition: all .8s ease-out .4s;
+  }
+  .section-body .ani-four {
+    transition: all .8s ease-out .6s;
+  }
+  .section-body .ani-five {
+    transition: all .8s ease-out .8s;
+  }
+}
+.custom-enter-to {
+  opacity: 1;
+  .section-top,
+  .section-body,
+  .section-bottom {
+    opacity: 1;
+  }
+
+  .section-body .ani-two,
+  .section-body .ani-three,
+  .section-body .ani-foure,
+  .section-body .ani-five {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+// TRANSITION LEAVE
+.custom-leave {
+  opacity: 1;
+}
+
+.custom-leave-active {
+  transition: opacity .75s ease-out;
+  .m-teaser-text,
+  .header-primary,
+  .section-bottom{
+    transition: opacity 100s ease-out;
+  }
+  .custom-overlay {
+    transition: all .425s ease-in-out;
+  }
+}
+
+.custom-leave-to {
+  opacity: 1;
+
+  .custom-overlay {
+    transform: translateY(0);
+  }
+
+  .m-teaser-text,
+  .header-primary,
+  .section-bottom{
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

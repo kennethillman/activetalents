@@ -1,0 +1,96 @@
+// SECTIONS / SLICES
+
+[class ^= "p-"] {
+
+// - - DEFAULT - - -
+
+ // ADJUST CONTENT IF SCREEN IS BIGGER THE SECTION CONTENT
+  .-p-content-adjust {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .section-top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      padding-top: $m1;
+    }
+
+    .section-body {
+      padding-bottom: $m1;
+    }
+
+    .section-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+  }
+
+
+// - - MAX - - -
+
+  // 479px
+  @media screen and (max-width: 479px)  {
+
+    .section-top {
+
+      padding-top: 60px;
+
+    }
+
+  }
+
+// - - Min - - -
+
+  // 1680px
+  @media screen and (min-width: 1680px)  {
+    //padding: $mxl 0 0;
+    .-p-content-adjust {
+      .section-top {
+        padding-top: $mxl;
+      }
+      .section-body {
+        padding-bottom: $mxl;
+      }
+    }
+  }
+
+  // 1920px
+  @media screen and (min-width: 1920px)  {
+    //padding: $mxxl 0 0;
+    .-p-content-adjust {
+      .section-top {
+        padding-top: $mxxl;
+      }
+      .section-body {
+        padding-bottom: $mxxl;
+      }
+    }
+  }
+
+    // 2600px
+  @media screen and (min-width: 2600px)  {
+   // padding: $mxxxl 0 0;
+
+    .-p-content-adjust {
+      .section-top {
+        padding-top: $mxxxl;
+      }
+      .section-body {
+        padding-bottom: $mxxxl;
+      }
+    }
+
+  }
+
+
+}
+

@@ -1,0 +1,71 @@
+
+// HELPER CLASSES
+
+.-bg-gradient-orange {
+  background: linear-gradient(to right, $orange, $pink);
+  .footer {
+    background: $pink;
+  }
+}
+
+.-bg-gradient-blue {
+  background: linear-gradient(to right, $blue, $darkblue);
+  .footer {
+    background: $darkblue;
+  }
+}
+
+.-bg-gradient-pink {
+  background: linear-gradient(to right, $pink, $purple);
+  .footer {
+    background: $purple;
+  }
+}
+
+
+.-bg-orange {
+  background: $orange;
+}
+.-bg-pink {
+  background: $pink;
+}
+.-bg-purple {
+  background: $purple;
+}
+.-bg-darkblue {
+  background: $darkblue;
+}
+.-bg-blue {
+  background: $blue;
+}
+
+.-color-orange {
+  color: $orange;
+}
+.-color-pink {
+  color: $pink;
+}
+.-color-purple {
+  color: $purple;
+}
+.-color-darkblue {
+  color: $darkblue;
+}
+.-color-blue {
+  color: $blue;
+}
+
+.-text-center {
+  text-align: center;
+}
+.-text-left {
+  text-align: left;
+}
+.-text-right {
+  text-align: right;
+}
+
+
+
+
+

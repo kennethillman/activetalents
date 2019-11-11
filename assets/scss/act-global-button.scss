@@ -1,0 +1,172 @@
+// BUTTON
+
+  .btn {
+    font-family: 'Oswald', sans-serif;
+    background-color: transparent;
+    font-size: 20px;
+    padding: 7px 6px 9px;
+    width: 166px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1;
+    color: #e6e6e6;
+    border-radius: 9999px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    border: 4px solid $white;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    transition: color ease-in-out .3s;
+    text-decoration: none;
+
+    .-bg-gradient-blue & {
+      color: $blue;
+    }
+
+    .-bg-blue & {
+      color: $blue;
+    }
+
+    .-bg-darkblue & {
+      color: $darkblue;
+    }
+
+    .-bg-gradient-orange &,
+    .-bg-orange & {
+      color: $orange;
+    }
+
+    .-bg-gradient-pink &,
+    .-bg-pink & {
+      color: $pink;
+    }
+
+    .-bg-purple & {
+      background: $purple;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: $white;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all ease-in-out .3s;
+    }
+
+    &:hover {
+      color: $white;
+
+      &:before {
+        transform: translateX(100%);
+      }
+    }
+
+    &.-ghost {
+      color: $white;
+      &:before {
+        transform: translateX(100%);
+      }
+      &:hover {
+
+        .-bg-gradient-blue & {
+          color: $blue;
+        }
+
+        .-bg-blue & {
+          color: $blue;
+        }
+
+        .-bg-darkblue & {
+          color: $darkblue;
+        }
+
+        .-bg-gradient-orange &,
+        .-bg-orange & {
+          color: $orange;
+        }
+
+        .-bg-gradient-pink &,
+        .-bg-pink & {
+          color: $pink;
+        }
+
+        .-bg-purple & {
+          color: $purple;
+        }
+
+        &:before {
+          transform: translateX(0);
+        }
+
+      }
+    }
+
+
+    // 480px
+    @media screen and (min-width: 480px)  {
+
+    }
+
+    // 600px
+    @media screen and (min-width: 600px)  {
+
+    }
+
+    // 768px
+    @media screen and (min-width: 768px)  {
+        font-size: 24px;
+        padding: .3em .3em .42em;
+        width: 200px;
+
+        // font-size: 20px;
+        // padding: 7px 6px 9px;
+        // width: 166px;
+
+    }
+
+    // 1024px
+    @media screen and (min-width: 1024px)  {
+      font-size: 28px;
+    }
+
+    // 1280px
+    @media screen and (min-width: 1280px)  {
+      font-size: 30px;
+       width: 250px;
+    }
+
+      // 1280px
+    @media screen and (min-width: 1440px)  {
+      font-size: 32px;
+       width: 295px;
+    }
+
+    // 1680px
+    @media screen and (min-width: 1680px)  {
+      border: 6px solid $white;
+      font-size: 34px;
+       width: 330px;
+    }
+
+    // 1920px
+    @media screen and (min-width: 1920px)  {
+      font-size: 36px;
+       width: 320px;
+    }
+
+    // 2600px
+    @media screen and (min-width: 2600px)  {
+      font-size: 46px;
+      width: 420px;
+    }
+
+
+
+ }

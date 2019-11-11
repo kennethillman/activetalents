@@ -1,0 +1,172 @@
+// MODULES
+
+[class ^= "m-"] {
+  position: relative;
+  margin-bottom: $m4;
+
+  .section-body .gc > div:last-child & {
+    margin-bottom: 0;
+  }
+
+  .text {
+    margin: 1em 0 1em;
+  }
+
+  figure {
+    display: none;
+  }
+
+    // 768px
+  @media screen and (min-width: 768px)  {
+
+    margin-bottom: 0;
+
+    .text {
+      margin: 1em 0 2em;
+    }
+
+    // Three modules
+    .section-body .gc > div:nth-child(2) & {
+      text-align: center;
+      .header-secondary {
+        text-align: center;
+      }
+      .btn {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .section-body .gc > div:last-child & {
+      text-align: right;
+      .header-secondary {
+        text-align: right;
+      }
+      figure {
+        position: absolute;
+        left: 100%;
+        right: auto;
+        margin: 0 0 0 32px;
+      }
+      .btn {
+        float: right;
+      }
+    }
+
+    // Four modules
+    .section-body .-m-four > div:nth-child(3) & {
+      text-align: left;
+      .header-secondary {
+        text-align: left;
+      }
+      .btn {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .section-body .-m-four > div:nth-child(2) &,
+    .section-body .-m-four > div:last-child & {
+      text-align: right;
+      .header-secondary {
+        text-align: right;
+      }
+      figure {
+        position: absolute;
+        left: 100%;
+        right: auto;
+        margin: 0 0 0 32px;
+      }
+      .btn {
+        float: right;
+      }
+    }
+
+
+  }
+
+  // 1024px
+  @media screen and (min-width: 1024px)  {
+    figure {
+      display: block;
+      position: absolute;
+      right: 100%;
+      margin: 0 16px 0 0;
+      top: 0;
+      &.-round {
+        border: 4px solid $white;
+        height: 76px;
+        width: 76px;
+        border-radius: 100%;
+        svg {
+          margin: 16px 16px 0 16px;
+          width: 38px;
+          height: 38px;
+        }
+      }
+    }
+  }
+
+  // 1280px
+  @media screen and (min-width: 1280px)  {
+    figure {
+      margin: 0 32px 0 0;
+      &.-round {
+        height: 88px;
+        width: 88px;
+        svg {
+          margin: 19px 19px 0;
+          width: 44px;
+          height: 44px;
+        }
+      }
+    }
+  }
+
+  @include VP768ONLY {
+    .s-applications .section-body .gc > div & {
+      text-align: left;
+      margin-bottom: $m4;
+
+      .header-secondary {
+        text-align: left;
+      }
+      .text {
+        margin: 1em 0 1em;
+      }
+      .btn {
+        float: none;
+      }
+    }
+    .s-applications .section-body .gc > div:last-child & {
+      margin-bottom: 0;
+    }
+  } // VP768ONLY END
+
+  // 2600px
+  @media screen and (min-width: 2600px)  {
+    .section-body .gc > div:last-child & {
+      figure {
+        margin: 0 0 0 42px;
+      }
+    }
+    figure {
+      margin: 0 42px 0 0;
+      &.-round {
+        border: 6px solid $white;
+        height: 152px;
+        width: 152px;
+        svg {
+          margin: 32px 32px 0 32px;
+          width: 76px;
+          height: 76px;
+        }
+      }
+    }
+  }
+
+
+
+}
