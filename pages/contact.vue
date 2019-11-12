@@ -18,7 +18,25 @@
       <div class="section-body">
         <div class="gc">
           <div class="g-5 g-push-1 text two">
-            Netlify contactform comming soon
+
+
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button class="btn" type="submit">Send</button>
+              </p>
+            </form>
+
+
           </div>
           <div class="g-5 text two">
             Netlify contactform comming soon
