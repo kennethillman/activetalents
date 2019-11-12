@@ -126,7 +126,7 @@ export default {
       text-align: center;
       svg {
         fill: $orange;
-        height: 60px;
+        height: 40px;
       }
     }
 
@@ -162,6 +162,13 @@ export default {
         margin-top: 40px;
         padding: 20px 0;
       }
+
+      .partners{
+        svg {
+          height: 60px;
+        }
+      }
+
 
     }
 
