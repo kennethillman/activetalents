@@ -62,7 +62,7 @@
             169 74 Solna <br>
             Stockholm <br>
             Sweden</div>
-          <div class="g-3 ">
+          <div class="g-4 ">
               <strong>Inquieries</strong>
               <a href="mailto:kenneth@activetalents.se">kenneth@activetalents.se</a><br>
               <a href="mailto:nidhi@activetalents.se">nidhi@activetalents.se</a>
@@ -128,6 +128,8 @@ export default {
       display: block;
     }
 
+    .section-body { width: 100%; }
+
     input,
     select,
     textarea {
@@ -177,6 +179,16 @@ export default {
       textarea {
         height: 120px;
       }
+
+
+      .contact-details > div:nth-child(2) {
+        text-align: center;
+      }
+
+      .contact-details > div:last-child {
+        text-align: right;
+      }
+
     }
 
   }
