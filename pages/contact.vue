@@ -20,7 +20,8 @@
           <div class="g-5 g-push-1 text two">
 
 
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="contact" value="ask-question" />
               <p>
                 <label>Your Name: <input type="text" name="name" /></label>
               </p>
