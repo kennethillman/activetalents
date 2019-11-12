@@ -2,6 +2,11 @@
 
 > Active Talents Website
 
+## Deploy status
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/851709cb-1855-4cb7-8277-6ff75d02dddd/deploy-status)](https://app.netlify.com/sites/active-talents-work-in-progress/deploys)   
+   
+
 ## Build Setup
 
 ``` bash
