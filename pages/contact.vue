@@ -40,12 +40,12 @@
             <form
               name="contact"
               action="/thanks"
-              method="post"
-              netlify
-              netlify-honeypot="bot-field"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
             >
-              // Hidden input to check for bots
-              <input type="hidden" name="form-name" value="contactus" />
+
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label for="name">Name:</label>
                 <input type="text" name="name" required/>
@@ -64,7 +64,7 @@
 
           </div>
           <div class="g-5 text two">
-            Netlify contactform comming soon
+            Netlify contactform comming soon - TRY 2
           </div>
           <div class="g-12 -text-center three"><br><br><nuxt-link to="/" class="btn ">Home</nuxt-link></div>
         </div>
