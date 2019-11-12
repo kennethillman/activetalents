@@ -1,6 +1,6 @@
 <template>
 
-    <section class="s-hero -reset" :style="{ 'background': 'url(' + bgsrc + ') no-repeat center center fixed' }" :class="['-type-' + type]">
+    <section class="s-hero -reset" :style="{ 'background-image': 'url(' + bgsrc + ')' }" :class="['-type-' + type]">
 
 
      <div class="section-body">
@@ -65,7 +65,8 @@ export default {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 88vh;
+  background-position: center center;
+  height: 88vh;
   backface-visibility: hidden;
   overflow: hidden;
 
