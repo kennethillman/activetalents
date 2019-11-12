@@ -81,6 +81,7 @@
     .linkedin {
       margin-top: 0;
       margin-right: 65px;
+      margin-bottom: 20px;
       svg {
         fill: $purple;
       }
@@ -204,6 +205,12 @@
       float: right;
     }
 
+    &.s-consultants {
+    .linkedin {
+      margin-bottom: 0;
+    }
+  }
+
     .linkedin {
       .header-secondary {
         &:before {
@@ -321,7 +328,6 @@
       }
 
       figure {
-
         margin: 0 34px 0 0;
         height: 100px;
         width: 100px;
