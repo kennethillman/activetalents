@@ -1,6 +1,6 @@
 <template>
 
-    <section class="s-hero -reset" :style="{ 'background-image': 'url(' + bgsrc + ')' }" :class="['-type-' + type]">
+    <section class="s-hero -reset" :style="{ 'background': 'url(' + bgsrc + ') no-repeat center center fixed' }" :class="['-type-' + type]">
 
 
      <div class="section-body">
@@ -32,6 +32,8 @@
   import Logo from '~/components/Logo.vue'
 
 export default {
+
+  //
   components: {
     Logo,
   },
@@ -59,14 +61,13 @@ export default {
 
 .s-hero {
   position: relative;
-  min-height: 88vh;
-  backface-visibility: hidden;
-  background-position: center center;
-  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 88vh;
+  backface-visibility: hidden;
+  overflow: hidden;
 
   &.-type-half {
     min-height: 50vh;
