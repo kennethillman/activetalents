@@ -28,7 +28,7 @@
         <div class="g-5">
           <m-teaser-text header="UI & Design systems"
             icon="screens"
-            text="Specialized in frontend development, large design systems andmodular pattern libraries for large or multiple dev teams, local or distributed."/>
+            text="Specialized in frontend development and design systems at scale with the end users in focus.  "/>
         </div>
         <div class="g-5 g-push-1">
           <m-teaser-text header="PO or SCM"
@@ -38,7 +38,7 @@
         <div class="g-5">
           <m-teaser-text header="Outsourcing"
             icon="globe"
-            text="Outsourcing is one of our expert areas, process overview, improving team work effincey or client communication as bridge managers."/>
+            text="Outsourcing is one of our expert areas. Process overview, improving team work effincey or client communication as bridge managers."/>
         </div>
 
       </div>

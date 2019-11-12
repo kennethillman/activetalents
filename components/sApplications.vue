@@ -17,16 +17,16 @@
           <div class="g-4 g-t-push-1">
             <div class="m-teaser-text">
 
-              <m-teaser-text header="Project development"
-                icon="" link="#" linktext="New"
-                text="Start up or a Bigger company, we are always excited over new projects.  Let´s begin!"/>
+              <m-teaser-text header="Projects"
+                icon=""
+                text="Start up or established, we are always excited over new projects.  Let´s begin!"/>
 
             </div>
           </div>
           <div class="g-4 g-t-push-1">
             <div class="m-teaser-text">
               <m-teaser-text header="A-Z"
-                icon="" link="#" linktext="Custom"
+                icon=""
                 text="Nordic Tech, Design and UX professionals ensures that full user experience is delivered at great quality. "/>
 
             </div>
@@ -34,8 +34,8 @@
           <div class="g-4 g-t-push-1">
 
               <m-teaser-text header="Maintenance"
-                icon="" link="#" linktext="Excisting"
-                text="Free time for your in-house developers. MVP time is over  we can help from here. "/>
+                icon="" link="#"
+                text=" MVP time is over, we can help from here. Free time for your developers."/>
 
           </div>
         </div>
@@ -46,14 +46,14 @@
 
       <div class="section-bottom footer -text -bg-darkblue">
 
-        <div class="gc">
+        <div class="gc -g-center">
           <div class="g-8 footer-text">
             <h4 class="header-secondary">”We work according to Scrum”</h4>
             <span class="text">Certified Scrum masters & Products owners</span>
           </div>
-          <div class="g-4 footer-button">
+         <!--  <div class="g-4 footer-button">
             <a class="btn  -ghost">Our process</a>
-          </div>
+          </div> -->
         </div>
 
       </div>
@@ -88,7 +88,7 @@ export default {
 
   },
   mounted () {
-      this.heightCheck();
+      // this.heightCheck();
   }
 }
 </script>

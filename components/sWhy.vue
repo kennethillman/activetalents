@@ -1,6 +1,6 @@
 <template>
 
-    <section class="s-why  -bg-gradient-blue"
+    <section class="s-why  -bg-gradient-orange"
       ref="sWhy"
       :class="{'-s-content-adjust': this.contentAdjust}">
 
@@ -44,9 +44,7 @@
             <div class="g-12">
               <div class="partners">
                 <svg-icon class="logo activetalents" name="activetalents-filled" />
-                <!-- <svg-icon class="logo cc" :name="'cc'" /> -->
-                <!-- <svg-icon class="logo staygold" :name="'staygold'" /> -->
-                <!-- <svg-icon class="logo indpro" :name="'indpro'" /> -->
+
               </div>
             </div>
 
@@ -54,13 +52,9 @@
 
       </div>
 
-       <!-- * BOTTOM * -->
+      <!-- * BOTTOM * -->
+      <div class="section-bottom footer -text -bg-darkblue"></div>
 
-      <div class="section-bottom footer -text -bg-darkblue">
-
-
-
-      </div>
     </section>
 
     </section>
@@ -131,7 +125,7 @@ export default {
       padding: 20px 0 0;
       text-align: center;
       svg {
-        fill: $blue;
+        fill: $orange;
         height: 60px;
       }
     }

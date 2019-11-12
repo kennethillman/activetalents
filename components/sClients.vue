@@ -1,6 +1,6 @@
 <template>
 
-  <section class="s-clients  -bg-gradient-orange"
+  <section class="s-clients  -bg-gradient-blue"
     ref="sClients"
    :class="{'-s-content-adjust': this.contentAdjust}">
 
@@ -93,7 +93,7 @@ export default {
     padding: 15px 0;
     svg {
       margin: 0;
-      fill: $orange;
+      fill: $blue;
       height: 40px;
     }
   }

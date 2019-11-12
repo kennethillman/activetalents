@@ -61,9 +61,12 @@ export default {
   position: relative;
   min-height: 88vh;
   backface-visibility: hidden;
-  background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   &.-type-half {
     min-height: 50vh;
