@@ -29,11 +29,34 @@ export default {
 
   text-align: center;
   padding: 15px 0;
+
   svg {
     margin: 0;
     fill: $orange;
     height: 40px;
   }
+
+  .-bg-gradient-blue & {
+    svg {
+      fill: $blue;
+    }
+  }
+
+  .-bg-gradient-orange & {
+    svg {
+      fill: $orange;
+    }
+  }
+
+  .-bg-gradient-pink & {
+    svg {
+      fill: $pink;
+    }
+  }
+
+
+
+
 
   // 480px
   @media screen and (min-width: 480px)  {
