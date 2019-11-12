@@ -95,6 +95,7 @@ export default {
       margin: 0;
       fill: $blue;
       height: 40px;
+      width: 100%;
     }
   }
 
