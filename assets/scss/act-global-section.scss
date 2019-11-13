@@ -49,7 +49,7 @@
 
   .footer-text {
     text-align: left;
-    margin-bottom: $m5;
+    // margin-bottom: $m5;
     span {
       display: block;
       margin-top: .56em;
@@ -80,7 +80,6 @@
   &.s-consultants {
     .linkedin {
       margin-top: 0;
-      margin-right: 65px;
       margin-bottom: 20px;
       svg {
         fill: $purple;
