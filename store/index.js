@@ -1,5 +1,6 @@
 export const state = () => ({
   menu: false,
+  orientation: false,
   menuNavigate: false,
   pageData: null,
   api: null
@@ -8,6 +9,9 @@ export const state = () => ({
 export const mutations = {
   setMenu(state, res) {
     state.menu = res
+  },
+  setOrientation(state, res) {
+    state.orientation = res
   },
   setMenuNavigate(state, res) {
     state.menuNavigate = res
@@ -27,6 +31,9 @@ export const actions = {
   setMenu(vuexContext, res) {
     vuexContext.commit('setMenu', res)
   },
+  setOrientation(vuexContext, res) {
+    vuexContext.commit('setOrientation', res)
+  },
   setMenuNavigate(vuexContext, res) {
     vuexContext.commit('setMenuNavigate', res)
   },
@@ -41,6 +48,9 @@ export const actions = {
 export const getters = {
   getMenu(state) {
     return state.menu
+  },
+  getOrientation(state) {
+    return state.orientation
   },
   getMenuNavigate(state) {
     return state.menuNavigate
