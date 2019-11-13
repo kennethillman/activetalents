@@ -21,14 +21,14 @@
       <div class="gc -m-four">
 
         <div class="g-5 g-push-1">
-          <m-teaser-text header="Talent Aquisition"
+          <m-teaser-text header="Talent Acquisition"
             icon="avatar-girl"
-            text="With experience from a wide range of small to big global companies. We can help you find the Talents you need."/>
+            text="With experience from a wide range of small to big global companies. We can help you find the Talent you need."/>
         </div>
         <div class="g-5">
           <m-teaser-text header="UI & Design systems"
             icon="screens"
-            text="Specialized in frontend development and design systems at scale with the end users in focus.  "/>
+            text="Specialized in UI/Frontend development and design systems at scale with the end users experience in focus."/>
         </div>
         <div class="g-5 g-push-1">
           <m-teaser-text header="PO or SCM"
@@ -38,7 +38,7 @@
         <div class="g-5">
           <m-teaser-text header="Outsourcing"
             icon="globe"
-            text="Outsourcing is one of our expert areas. Process overview, improving team work effincey or client communication as bridge managers."/>
+            text="Outsourcing is one of our expert areas. Process overview, improving teamwork efficiency or client communication as bridge managers."/>
         </div>
 
       </div>
@@ -108,7 +108,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 
 .s-consultants {
 

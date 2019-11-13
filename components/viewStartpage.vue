@@ -11,14 +11,14 @@
       <s-developers/>
 
       <!-- *** APPLICATIONS *** -->
-       <s-applications/>
+      <s-applications/>
 
 
       <!-- *** CONSULTANT SERVICES *** -->
-       <s-consultants/>
+      <s-consultants/>
 
-       <!-- *** WHY  *** -->
-       <s-why/>
+      <!-- *** WHY  *** -->
+      <s-why/>
 
       <!-- *** CLIENTS *** -->
       <s-clients/>

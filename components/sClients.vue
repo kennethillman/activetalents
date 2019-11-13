@@ -79,12 +79,12 @@ export default {
     }
   },
   mounted () {
-      //this.heightCheck();
+    // this.heightCheck();
   }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" >
 
 .s-clients {
 

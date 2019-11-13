@@ -1,8 +1,8 @@
 <template>
 
-  <section class="s-developers  -bg-gradient-orange"
-    ref="sDevelopers"
-   :class="{'-s-content-adjust': this.contentAdjust}">
+  <section class="s-developers  -bg-gradient-orange" ref="sDevelopers"
+    :class="{'-s-content-adjust': this.contentAdjust}"
+   >
 
     <!-- * TOP * -->
 
@@ -105,7 +105,9 @@ export default {
 
   },
   mounted () {
-     // this.heightCheck();
+   // if(this.$store.getters.getMenu === "landscape") {
+       //this.heightCheck();
+    //}
   }
 }
 </script>
@@ -113,7 +115,7 @@ export default {
 
 
 
-<style lang="scss">
+<style lang="scss" >
 
 .s-developers {
 
