@@ -1,5 +1,5 @@
 <template>
-  <div class="act-page-container" :class="{'-menu-open': this.$store.getters.getMenu, '-portrait': this.orientation === 'p', '-landscape': this.orientation === 'l','-menu-navigate': this.$store.getters.getMenuNavigate,}">
+  <div class="at" :class="{'-menu-open': this.$store.getters.getMenu, '-portrait': this.orientation === 'p', '-landscape': this.orientation === 'l','-menu-navigate': this.$store.getters.getMenuNavigate,}">
 
     <!-- *** HEADER *** -->
     <s-header/>
@@ -46,8 +46,10 @@
         let winW = window.innerWidth;
         if (winH > winW && this.orientation !== 'p') {
           this.orientation = 'p'
+          this.$store.commit("setOrientation",'portrait')
         } else if (winW > winH && this.orientation !== 'l'){
           this.orientation = 'l'
+          this.$store.commit("setOrientation",'landscape')
         }
       }
     },
@@ -60,7 +62,7 @@
 </script>
 
 <style lang="scss" scoped>
-  .act-page-container {
+  .at {
     min-height: 100vh;
     overflow: hidden;
   }
