@@ -20,7 +20,7 @@
     "@nuxtjs/svg": "^0.1.6",
     "@nuxtjs/svg-sprite": "^0.4.0",
     "cross-env": "^5.2.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.9.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
